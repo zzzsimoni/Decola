@@ -57,6 +57,9 @@ public class DecolaApp {
                         System.out.println(user.Mostrar());
                     }
                     break;
+
+                case 0:
+                    System.out.println("\nObrigado por usar o Decola. Volte sempre! ");
                 default:
                     if (opt != 0) {
                         System.out.println("\nOpção inválida. Tente novamente.");

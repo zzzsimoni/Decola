@@ -10,13 +10,13 @@ public class DecolaApp {
 
         Scanner sc = new Scanner(System.in);
         ArrayList<Usuario> lstUsuario = new ArrayList<>();
-        ArrayList<Trilha> trilhas = new ArrayList<>();
         int opt;
+        int opt2 = 0;
 
         do {
             System.out.println("\n=== MENU DECOLA ===");
             System.out.println("1 - Cadastrar Usuário");
-            System.out.println("2 - Explorar Trilhas");
+            System.out.println("2 - Explorar profissões");
             System.out.println("3 - Teste Vocacional");
             System.out.println("4 - Listar Usuários Cadastrados");
             System.out.println("0 - Sair");
@@ -40,12 +40,21 @@ public class DecolaApp {
                     System.out.println("\nUsuário cadastrado com sucesso!");
                     break;
                 case 2:
-                    System.out.println();
+                    System.out.println("Qual área deseja explorar?: \n");
+                    System.out.println("1 - Ciências exatas, da terra e engenharias\n");
+                    System.out.println("2 - Ciências biológicas e da saúde\n");
+                    System.out.println("3 - Ciências humanas e sociais\n");
+
+                        switch (opt2) {
+                            case 1 :
+
+                        }
 
                     break;
 
                 case 3:
-                    System.out.println("\nTeste Vocacional ainda não implementado.");
+                        TesteVocacional teste = new TesteVocacional();
+                        System.out.println(teste.Perguntas());
                     break;
                 case 4:
                     System.out.println("\n=== Usuários Cadastrados ===");

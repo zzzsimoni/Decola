@@ -1,4 +1,4 @@
-package UPX.UPX;
+package DECOLA;
 
 public class Usuario {
     private String nome;

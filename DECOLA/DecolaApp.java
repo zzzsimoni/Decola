@@ -1,4 +1,4 @@
-package UPX.UPX;
+package DECOLA;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -40,21 +40,16 @@ public class DecolaApp {
                     System.out.println("\nUsuário cadastrado com sucesso!");
                     break;
                 case 2:
-                    System.out.println("Qual área deseja explorar?: \n");
-                    System.out.println("1 - Ciências exatas, da terra e engenharias\n");
-                    System.out.println("2 - Ciências biológicas e da saúde\n");
-                    System.out.println("3 - Ciências humanas e sociais\n");
-
-                        switch (opt2) {
-                            case 1 :
-
-                        }
-
+                    Empregos empregos = new Empregos("Todas as profissões");
+                    empregos.adicionarProfissoes();
+                    for (Profissoes p : empregos.getLstProfissoes()) {
+                        p.Mostrar();
+                    }
                     break;
 
                 case 3:
-                        TesteVocacional teste = new TesteVocacional();
-                        System.out.println(teste.Perguntas());
+                    TesteVocacional teste = new TesteVocacional();
+                    System.out.println(teste.Perguntas());
                     break;
                 case 4:
                     System.out.println("\n=== Usuários Cadastrados ===");

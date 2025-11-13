@@ -1,4 +1,4 @@
-package UPX.UPX;
+package DECOLA;
 
 import java.util.Scanner;
 
